@@ -12,8 +12,9 @@ SITE_NAME = 'Musikkplassen.no'
 
 
 def main():
+    print('test')
     scrape_site(get_elements, get_attrs, get_next_page, SITE_NAME, aprt_string_format,
-                pushover_token=PUSHOVER_TOKEN, email_exceptions=False, max_notifi_entries=2)
+                pushover_token=PUSHOVER_TOKEN, max_notifi_entries=2)
 
 
 def aprt_string_format(ad_link, search_link, ad_dict):
